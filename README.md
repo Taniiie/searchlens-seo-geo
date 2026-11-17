@@ -68,7 +68,7 @@ searchlens-seo-geo/
 |-- searchlens.db               # SQLite Relational Database (auto-initialized & seeded)
 |-- requirements.txt            # Dependency manifest
 |-- LICENSE                     # Original MIT License (Huzaifa Shoukat)
-|-- README.md                   # Full documentation & interview guide
+|-- README.md                   # Full documentation & usage guide
 |
 |-- assets/
 |   `-- screenshots/            # Verified application interface captures
@@ -246,27 +246,6 @@ python -m pytest -v
 - `tests/test_keywords.py`: Intent classification, long-tail query filtering, opportunity score modeling, clustering, and e-commerce suggestions.
 - `tests/test_ecommerce.py`: PDP vs PLP detection, title formula check, missing SKU/availability/price, faceted self-canonicals, sample store audits.
 - `tests/test_geo_and_storage.py`: Citation extraction, brand mention parsing, competitor share of voice, SQLite CRUD lifecycle, and CSV/JSON exports.
-
----
-
-## Interview Concepts Guide (For E-Commerce SEO / SEO-GEO Analyst Roles)
-
-When presenting this project in technical interviews:
-
-1. Faceted Navigation in E-Commerce:
-   - Problem: Filtering and sorting parameters (e.g. `?size=10&color=blue&sort=price_asc`) create exponential duplicate URL combinations that drain crawl budget and split link equity.
-   - Solution: Enforce canonical tags pointing from filtered variations to the root category URL, block irrelevant filter combinations in `robots.txt`, and use `rel="nofollow"` on multi-select filters where appropriate.
-
-2. Schema.org for Product and Shopping SERP Features:
-   - Concept: `Product` schema with nested `Offer` (price, priceCurrency, availability) and `AggregateRating` enables rich SERP snippets (star ratings, price, in-stock badges) that lift click-through rates (CTR) by 20 to 30 percent.
-   - Common Pitfall: Missing ISO 4217 currency codes or missing `availability` prevents Google Shopping and rich result validation.
-
-3. Generative Engine Optimization (GEO):
-   - Concept: AI search engines (Perplexity, ChatGPT, Gemini) synthesize answers using Retrieval-Augmented Generation (RAG) by crawling trusted third-party review sites, Reddit consensus, and clear structured brand websites.
-   - Optimization Strategy: Gain citations on high-authority domain hubs that AI models cite, implement clean `/llms.txt` markdown files, and maintain consistent entity naming across directories.
-
-4. Search Intent and Keyword Specificity:
-   - Concept: Aligning content with user intent (Transactional vs Commercial vs Informational). High-intent long-tail keywords (3+ words) frequently deliver higher conversion rates than high-volume head terms due to purchase readiness.
 
 ---
 
