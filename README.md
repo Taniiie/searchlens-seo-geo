@@ -5,8 +5,6 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-FF4B4B.svg)](https://streamlit.io/)
 [![Tests Passing](https://img.shields.io/badge/tests-25%20passed-brightgreen.svg)]()
 
-> **Target Role:** E-Commerce SEO Intern / SEO-GEO Analyst Intern Portfolio Project  
-> **Repository:** [https://github.com/Taniiie/searchlens-seo-geo.git](https://github.com/Taniiie/searchlens-seo-geo.git)
 
 ---
 
