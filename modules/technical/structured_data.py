@@ -223,3 +223,4 @@ def validate_structured_data(soup: BeautifulSoup) -> Dict[str, Any]:
         "rich_snippet_eligible": list(set(rich_snippet_eligible)),
         "is_valid": len([i for i in validation_issues if i["severity"] == "error"]) == 0
     }
+

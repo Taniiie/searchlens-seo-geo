@@ -109,3 +109,4 @@ def test_structured_data_breadcrumbs():
     res = validate_structured_data(soup)
     assert "BreadcrumbList" in res["schema_types"]
     assert any("Breadcrumb Trail" in r for r in res["rich_snippet_eligible"])
+

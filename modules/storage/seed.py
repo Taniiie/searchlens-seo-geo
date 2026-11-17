@@ -115,3 +115,4 @@ def seed_portfolio_data(db: SearchLensDB):
     import pandas as pd
     df_kw = pd.DataFrame(seed_kw_data)
     db.save_keywords(project_id, df_kw, source_label="Curated Seed Dataset")
+

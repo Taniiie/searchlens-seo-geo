@@ -60,3 +60,4 @@ def test_issue_derivation_structure():
         assert iss.severity in ("error", "warning", "notice")
         assert len(iss.explanation) > 10, f"Issue {iss.code} missing explanation"
         assert len(iss.recommended_fix) > 10, f"Issue {iss.code} missing recommended fix"
+

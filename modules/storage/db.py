@@ -477,3 +477,4 @@ class SearchLensDB:
     def export_table_json(self, table_name: str, project_id: Optional[int] = None) -> str:
         df = self.export_table_df(table_name, project_id)
         return df.to_json(orient="records", indent=2)
+
