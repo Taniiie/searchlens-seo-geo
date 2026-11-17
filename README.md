@@ -257,8 +257,6 @@ python -m pytest -v
 
 ---
 
-## Attribution and License
+## License
 
 - License: [MIT License](LICENSE)
-- Original Foundation: Inherited and extended from the [Advanced SEO Analyzer](https://github.com/Huzaifa-coder/advanced-seo-analyzer) created by Huzaifa Shoukat (Copyright (c) 2025 Huzaifa Shoukat).
-- Transformations and Extensions: All E-Commerce SEO modules, Generative Engine Optimization (GEO) tracking, Keyword Intelligence processor, SQLite storage engine, test suite, and the Streamlit dashboard were engineered specifically for SearchLens – SEO & GEO Intelligence Platform.
